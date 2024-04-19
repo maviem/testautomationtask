@@ -1,8 +1,8 @@
+import common.AddUserPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 
 public class AddUserTest {
 
@@ -24,5 +24,9 @@ public class AddUserTest {
                 ,"testPassword","B", "Sales Team","testEmail@gmail.com","097273637");
         addUserPage.clickSaveButton(driver);
 
+        driver.quit();
+
     }
+
+
 }
